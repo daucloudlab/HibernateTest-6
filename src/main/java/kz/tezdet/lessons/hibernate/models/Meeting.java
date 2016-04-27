@@ -2,6 +2,7 @@ package kz.tezdet.lessons.hibernate.models;
 
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,6 +16,7 @@ public class Meeting {
     private Long meetingId ;
     @Column(name = "subject")
     private String subject ;
+
     @Column(name = "meeting_date")
     private Date meetingDate ;
 
