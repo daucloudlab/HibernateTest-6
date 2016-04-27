@@ -12,11 +12,11 @@ public class Main {
         Session session = HibernateUtils.getSessionFactory().openSession() ;
         Transaction tx = session.beginTransaction() ;
 
-        Meeting meeting1 = new Meeting("Quaterly Sales meeting") ;
-        Meeting meeting2 = new Meeting("Weekly Status meeting") ;
+        Meeting meeting1 = new Meeting("Театрда кесдесу") ;
+        Meeting meeting2 = new Meeting("Кітапханада кездесу") ;
 
-        Employee employee1 = new Employee("Sergey", "Brin") ;
-        Employee employee2 = new Employee("Larry", "Page") ;
+        Employee employee1 = new Employee("Дәулет", "Баймбетов") ;
+        Employee employee2 = new Employee("Әлия", "Анарбекова") ;
 
         employee1.getMeetings().add(meeting1) ;
         employee1.getMeetings().add(meeting2) ;
